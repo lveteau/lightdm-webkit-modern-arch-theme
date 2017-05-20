@@ -1,0 +1,249 @@
+@font-face {
+    font-family: "Lato";
+    src: url("font/Lato-Thin.ttf");
+    font-weight:400;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  font-size: 25px;
+}
+
+body {
+  background: url('main-bg.png') no-repeat;
+  background-size: cover;
+  display: table;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  color: #EFEFEF;
+
+  font-size: 10pt;
+  text-shadow: 1px 1px 3px black;
+}
+
+body, span, div, img {
+  -webkit-user-select: none;
+}
+
+input {
+    background: none;
+    border: none;
+  font-size: 18px;
+  padding: 4px;
+}
+
+input[type=radio][name=session] {
+	margin: 0;
+	padding: 0;
+	outline:none;
+	opacity:0;
+}
+
+span.session_label:before {
+	content: "";
+	display: block;
+	width: 3px;
+	height: 3px;
+    border-radius: 50%;
+	position: absolute;
+	left: -5px;
+    top: 10px;
+	-webkit-transition: background-color 0.3s ease-in-out;
+}
+
+span.session_label {
+    font-size: 15px;
+	display: inline-block;
+	width: 10em;
+	text-align: left;
+	padding: .2em 0 .2em 1em;
+	margin: .2em 0 .2em 0em;
+	border-left: 0;
+	position:relative;
+	-webkit-transition: background-color 0.3s ease-in-out;
+}
+#session_container {
+    height: 200px;
+    overflow-x: hidden;
+    padding-right: 17px;
+}
+#session_container::-webkit-scrollbar {
+    display: none;
+}
+#session_container:hover span.session_label:hover:before,
+#session_container:hover span.session_label:hover {
+    background: rgba(225, 225, 225, 0.2);
+}
+
+#session_container input:checked ~ span.session_label:before,
+#session_container input:checked ~ span.session_label:hover:before {
+	background-color: #e1e1e1;
+}
+
+input[type=password] {
+    background: rgba(225, 225, 225, 0.5);
+	border-radius: 10px;
+	padding: .3em 1em;
+	-webkit-transition: box-shadow 0.3s ease-in-out;
+	width: 13.6em;
+	display: inline-block;
+	position: relative;
+	margin-bottom: .2em;
+	color: white;
+}
+
+input:focus {
+  outline: none;
+  -webkit-transition: box-shadow 0.3s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+.smooth {
+  -webkit-transition: visibility 0s, opacity 0.3s, left 0.4s;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition-delay: 0.3s, 0s, 0s;
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.header {
+  height: 55px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  margin-left: -2em;
+}
+
+footer, .header {
+  width: 100%;
+}
+
+.time {
+  float: right;
+  line-height: 25px;
+  font-size: 11pt;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.login_content {
+  display: table-row;
+}
+
+.login_container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#message {
+  display: table-row;
+  height: 80px;
+  -webkit-transition: visibility 0s, opacity 0.3s, height 0.3s;
+}
+
+#message.hidden {
+  height: 0px;
+}
+
+#message_content {
+  display: table-cell;
+  vertical-align: top;
+  text-align: center;
+}
+
+#message_content.error {
+  color: #F55;
+}
+
+.user {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.user:active {
+  opacity: 0.5;
+}
+
+.user_image_wrapper {
+  width: 120px;
+  height: 120px;
+
+  border-radius: 120px;
+  border: 1px solid #e1e1e1;
+  -webkit-transition: all 0.3s ease-in-out;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.user_image {
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
+}
+
+.user_name {
+  display: block;
+  margin-top: 15px;
+  font-size: 30px;
+}
+
+.action {
+  display: inline-block;
+  width: 80px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.action_image {
+  height: 50px;
+  width: 50px;
+
+  margin-bottom: 5px;
+}
+
+.action_image:hover {
+  height: 53px;
+  width: 53px;
+}
+
+.action_image:active {
+  height: 50px;
+  width: 50px;
+}
+
+.action_image_wrapper {
+  height: 53px;
+  width: 53px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.action_label {
+  height: 53px;
+  width: 53px;
+  color: #B2B2B2;
+}

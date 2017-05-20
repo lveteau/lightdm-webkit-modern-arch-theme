@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- mock.js is only required for local testing -->
+    <script type="text/javascript" src="mock.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body onload="initialize()" oncontextmenu="return false;">
+    <div class="header">
+      <span id="current_time" class="time"></span>
+    </div>
+    <div class="login_content">
+      <div class="login_container">
+        <div class="center">
+          <div id="user_template" class="user hidden smooth button">
+            <div class="user_image_wrapper">
+              <img class="user_image" src=""/>
+            </div>
+            <span class="user_name"></span>
+          </div>
+        </div>
+        <div id="password_container" class="center hidden smooth">
+          <form action="javascript: provide_secret()" class="password_prompt">
+            <input id="password_entry" type="password" placeholder="Password" />
+            <div id="session_container" class="smooth">
+              <div id="session_template">
+                  <label>
+                      <input type="radio" name="session">&nbsp;<span class="session_label"></span></input>
+                  </label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="message" class="smooth">
+      <div id="message_content"></div>
+    </div>
+    <footer>
+      <div id="action_suspend" class="action button">
+        <div class="action_image_wrapper" onclick="lightdm.suspend();"><span class="action_label">Suspend</span></div>
+      </div>
+      <div id="action_restart" class="action button">
+        <div class="action_image_wrapper" onclick="lightdm.restart();"><span class="action_label">Restart</span></div>
+      </div>
+      <div id="action_shutdown" class="action button">
+        <div class="action_image_wrapper" onclick="lightdm.shutdown();"><span class="action_label">Shutdown</span></div>
+      </div>
+  </footer>
+  </body>
+</html>
