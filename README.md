@@ -1,7 +1,7 @@
 LightDM Webkit Modern Arch Theme
 ===========================
 
-This is a LightDM webkit greeter theme for Archlinux. Based on [LightDM-Webkit-MacOSX-Theme](http://github.com/Wattos/LightDM-Webkit-MacOSX-Theme)
+This is a LightDM webkit greeter theme for Archlinux. Based on [LightDM-Webkit-Archlinux-Theme](https://github.com/shosca/lightdm-webkit-archlinux-theme)
 
 Installation Instructions
 -------------------------
