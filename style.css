@@ -1,11 +1,6 @@
-@font-face {
-    font-family: "Lato";
-    src: url("font/Lato-Thin.ttf");
-    font-weight:400;
-}
 
 body {
-  font-family: Lato, sans-serif;
+font-family: sans-serif;
   font-size: 25px;
 }
 

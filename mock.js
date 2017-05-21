@@ -9,16 +9,10 @@ if (typeof lightdm == 'undefined') {
 	lightdm.layout= lightdm.layouts[0];
 	lightdm.sessions= [
 		{ name: "LXQt Desktop", key: "lxqt" },
-		{ name: "KDE Plasma Desktop", key: "kdeplasma" },{ name: "LXQt Desktop", key: "lxqt" },
-		{ name: "KDE Plasma Desktop", key: "kdeplasma" },{ name: "LXQt Desktop", key: "lxqt" },
-		{ name: "KDE Plasma Desktop", key: "kdeplasma" },{ name: "LXQt Desktop", key: "lxqt" },
-		{ name: "KDE Plasma Desktop", key: "kdeplasma" },{ name: "LXQt Desktop", key: "lxqt" },
-		{ name: "KDE Plasma Desktop", key: "kdeplasma" },{ name: "LXQt Desktop", key: "lxqt" },
-		{ name: "KDE Plasma Desktop", key: "kdeplasma" },{ name: "LXQt Desktop", key: "lxqt" },
-		{ name: "KDE Plasma Desktop", key: "kdeplasma" },{ name: "LXQt Desktop", key: "lxqt" },
-		{ name: "KDE Plasma Desktop", key: "kdeplasma" },{ name: "LXQt Desktop", key: "lxqt" },
-		{ name: "KDE Plasma Desktop", key: "kdeplasma" },{ name: "LXQt Desktop", key: "lxqt" },
 		{ name: "KDE Plasma Desktop", key: "kdeplasma" },
+{ name: "GNOME", key: "kdeplasma" },
+{ name: "Deepin", key: "kdeplasma" },
+{ name: "i3", key: "kdeplasma" },
 					]
 	lightdm.default_session=lightdm.sessions[0].key;
 	lightdm.authentication_user= null;
@@ -29,7 +23,7 @@ if (typeof lightdm == 'undefined') {
 	lightdm.can_shutdown= true;
 
 	lightdm.users= [
-				   { name: "clarkk", username: "clarkk", real_name:"Superman", display_name: "Loic", image :"", language: "en_US", layout: null, session: lightdm.sessions[1].key, logged_in: false }
+				   { name: "clarkk", username: "clarkk", real_name:"Superman", display_name: "Superman", image :"", language: "en_US", layout: null, session: lightdm.sessions[1].key, logged_in: false }
 	               ]
 	lightdm.default_session=lightdm.sessions[0];
 	lightdm.num_users= lightdm.users.length;
